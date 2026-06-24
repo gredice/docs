@@ -1,72 +1,74 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
+  "name": "Gredice",
+  "theme": "almond",
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://media.brand.dev/9b0069d6-22ab-4efb-a33a-1987b5306b38.svg",
+    "dark": "https://media.brand.dev/9b0069d6-22ab-4efb-a33a-1987b5306b38.svg"
+  },
+  "favicon": "https://media.brand.dev/ec58f6cf-3e56-46f4-8b3e-d0fad3d0639f.svg",
+  "colors": {
+    "primary": "#306e47",
+    "light": "#94b4a4",
+    "dark": "#c9d9cc"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Otvori vrt",
+      "href": "https://vrt.gredice.com"
     }
   },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Vodič",
+        "groups": [
+          {
+            "group": "Početak",
+            "pages": [
+              "introduction",
+              "how-it-works",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Vaš vrt",
+            "pages": [
+              "garden/overview",
+              "garden/raised-beds",
+              "garden/plants",
+              "garden/operations"
+            ]
+          },
+          {
+            "group": "Naručivanje",
+            "pages": [
+              "ordering/sowing",
+              "ordering/delivery",
+              "ordering/pricing",
+              "ordering/returns"
+            ]
+          },
+          {
+            "group": "Značajke",
+            "pages": [
+              "features/sunflowers",
+              "features/suncokret-ai",
+              "features/companion-planting",
+              "features/notifications"
+            ]
+          },
+          {
+            "group": "Pomoć",
+            "pages": [
+              "help/faq",
+              "help/quality-safety",
+              "help/contact"
+            ]
+          }
+        ]
+      }
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }

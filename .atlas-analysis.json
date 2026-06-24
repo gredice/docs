@@ -1,0 +1,94 @@
+{
+  "projectType": "saas",
+  "projectName": "Gredice",
+  "projectDescription": "Gredice is a Croatian urban gardening platform where users choose plants, and local farm partners plant and maintain a real raised bed on their behalf — managed entirely through a gamified garden app.",
+  "theme": "almond",
+  "primaryColor": "#306e47",
+  "lightColor": "#94b4a4",
+  "darkColor": "#c9d9cc",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Vodič",
+        "groups": [
+          {
+            "group": "Početak",
+            "pages": [
+              "introduction",
+              "how-it-works",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Vaš vrt",
+            "pages": [
+              "garden/overview",
+              "garden/raised-beds",
+              "garden/plants",
+              "garden/operations"
+            ]
+          },
+          {
+            "group": "Naručivanje",
+            "pages": [
+              "ordering/sowing",
+              "ordering/delivery",
+              "ordering/pricing",
+              "ordering/returns"
+            ]
+          },
+          {
+            "group": "Značajke",
+            "pages": [
+              "features/sunflowers",
+              "features/suncokret-ai",
+              "features/companion-planting",
+              "features/notifications"
+            ]
+          },
+          {
+            "group": "Pomoć",
+            "pages": [
+              "help/faq",
+              "help/quality-safety",
+              "help/contact"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Gamified 3D garden visualization of your real raised bed",
+    "47+ plant varieties with detailed growing guides",
+    "Local OPG farm partners plant and maintain your garden",
+    "Sowing calendar with seasonal bonuses",
+    "Companion planting recommendations",
+    "Suncokreti loyalty currency (earn & spend in-app)",
+    "Suncokret AI assistant for personalized garden tips",
+    "Flexible delivery with 2-hour time windows",
+    "Push notifications and garden activity updates",
+    "One-click operations: watering, harvesting, pruning, and more"
+  ],
+  "publicApiSurface": [
+    "GET /api/directories — plant/entity directory lookup",
+    "GET /api/gardens — list customer gardens",
+    "POST /api/gardens — create garden",
+    "GET /api/gardens/:id — garden detail with raised beds and plants",
+    "GET /api/data — public data (weather, statistics)",
+    "POST /api/auth/login — authenticate user",
+    "POST /api/auth/register — register new account",
+    "GET /api/favorites — user favorites",
+    "POST /api/shopping-cart — add to cart",
+    "POST /api/checkout — initiate checkout",
+    "GET /api/delivery — delivery options",
+    "POST /api/newsletter — newsletter signup",
+    "POST /api/feedback — submit feedback",
+    "GET /api/news — blog/news content",
+    "GET /api/occasions — contests and occasions",
+    "POST /api/notifications — manage push notifications",
+    "MCP /api/mcp/commerce — AI agent commerce tools",
+    "MCP /api/mcp/gardens — AI agent garden context tools",
+    "MCP /api/mcp/directories — AI agent directory search"
+  ]
+}
